@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="8"
+    android:id="@+id/main_verify"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+        <LinearLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/backbutton"
+            android:onClick="BackBtn"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_arrow_back_ios_new_24"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                >
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/verify"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:alpha="0.6"
+            android:text="We \'ve sent an email to ******@gmail.com Please enter code below. "
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="16dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Code"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:textSize="25dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                >
+            </TextView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/Code"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/verifycode"
+                    android:hint="-"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    app:layout_constraintBaseline_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    >
+                </EditText>
+                <EditText
+                    android:id="@+id/Code1"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/verifycode"
+                    android:hint="-"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:layout_marginStart="11dp"
+                    app:layout_constraintStart_toEndOf="@id/Code"
+                    >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/Code2"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/verifycode"
+                    android:hint="-"
+                    android:maxLength="1"
+
+                    android:textAlignment="center"
+                    android:layout_marginStart="11dp"
+                    app:layout_constraintStart_toEndOf="@id/Code1"
+                    >
+                </EditText>
+                <EditText
+                    android:id="@+id/Code3"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/verifycode"
+                    android:hint="-"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:layout_marginStart="11dp"
+                    app:layout_constraintStart_toEndOf="@id/Code2"
+                    >
+                </EditText>
+                <EditText
+                    android:id="@+id/Code4"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/verifycode"
+                    android:hint="-"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:layout_marginStart="11dp"
+                    app:layout_constraintStart_toEndOf="@id/Code3"
+                    >
+                </EditText>
+                <EditText
+                    android:id="@+id/Code5"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/verifycode"
+                    android:hint="-"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:layout_marginStart="11dp"
+                    app:layout_constraintStart_toEndOf="@id/Code4"
+                    >
+                </EditText>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/error"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text=""
+                android:textSize="16dp"
+                android:textColor="@color/colorRed"
+                android:gravity="center_vertical"
+                android:paddingStart="25dp"
+
+                >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/remembered_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Didn\'t see your email?"
+                    android:textColor="#757575"
+                    android:alpha="0.7"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/login_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Resend  "
+                    android:textColor="@color/colorBlue"
+                    android:textSize="16sp"
+                    android:paddingStart="8dp"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:onClick="ResendBtn"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/buttonsignup"
+            android:gravity="center"
+            android:text="Enter Code"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:onClick="EnterCodeBtn"
+            >
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

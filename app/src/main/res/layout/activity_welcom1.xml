@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/main">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:background="@drawable/backgroundwelcome"
+        >
+        <TextView
+            android:id="@+id/text1"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore Now"
+            android:fontFamily="sans-serif-black"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:alpha="1.5"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_gravity="center"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Join GUIDER Today"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:padding="5dp"
+
+            >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@drawable/background_sky1"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+        <TextView
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Create Account"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:background="@drawable/buttonsignup"
+            android:layout_marginTop="60dp"
+            android:onClick="BtnSignup_Onclick"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:paddingStart="10dp"
+            android:layout_marginTop="40dp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Login"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/colorBlue"
+            android:padding="16dp"
+            android:background="@drawable/background_white"
+            android:layout_marginTop="10dp"
+            android:onClick="BtnLogin_Onclick"
+            >
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>

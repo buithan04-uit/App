@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Image layer -->
+    <item>
+        <bitmap
+            android:src="@drawable/img_3"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:gravity="center"
+            android:alpha="0.4"
+            />
+    </item>
+</layer-list>

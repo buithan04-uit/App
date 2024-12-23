@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/main"
+    >
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_3"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/WarningText"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Warning about potholes along your route"
+        android:textSize="30dp"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Let\'s get start"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:background="@drawable/buttonwelcom"
+        android:padding="16dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:onClick="BtnNext_Onclick"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By signing in with an account, you agree to SO's Terms of Service and Privacy Policy."
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        >
+    </TextView>
+</LinearLayout>
